@@ -1,0 +1,19 @@
+{
+  "name": "levy-home-app",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:shared": "npm run build -w @levy-home/shared",
+    "dev:api": "npm run build:shared && npm run dev -w @levy-home/api",
+    "dev:mobile": "npm run build:shared && npm run start -w @levy-home/mobile",
+    "typecheck": "npm run build:shared && npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}

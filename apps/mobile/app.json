@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Levy Home",
+    "slug": "levy-home",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "levyhome",
+    "platforms": [
+      "ios"
+    ],
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.levy.home",
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
