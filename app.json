@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "08eca4d3-53fd-40ab-947c-d8e0db05c8eb"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.joshaaronlevy.levyhomeapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}
